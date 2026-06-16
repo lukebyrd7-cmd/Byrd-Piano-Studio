@@ -2,7 +2,6 @@ const navigation = [
   { label: "About", href: "#about" },
   { label: "Lessons", href: "#lessons" },
   { label: "Tuition", href: "#tuition" },
-  { label: "Philosophy", href: "#philosophy" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -18,11 +17,14 @@ export function Header() {
         >
           Byrd Piano Studio
         </a>
-        <a className="button-primary min-h-10 px-4 text-xs sm:min-h-12 sm:px-6 sm:text-sm lg:order-3" href="#contact">
-          Book a Trial Lesson
+        <a
+          className="button-primary min-h-10 whitespace-nowrap px-3 text-xs sm:min-h-12 sm:px-6 sm:text-sm lg:order-3"
+          href="#contact"
+        >
+          Request Lesson Information
         </a>
         <nav
-          className="order-3 flex w-full items-center gap-5 overflow-x-auto border-t border-walnut/10 pt-3 lg:order-2 lg:w-auto lg:gap-7 lg:overflow-visible lg:border-t-0 lg:pt-0"
+          className="order-3 flex w-full items-center gap-4 overflow-x-auto border-t border-walnut/10 pt-3 sm:gap-5 lg:order-2 lg:w-auto lg:gap-7 lg:overflow-visible lg:border-t-0 lg:pt-0"
           aria-label="Primary navigation"
         >
           {navigation.map((item) => (

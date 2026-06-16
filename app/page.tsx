@@ -100,7 +100,7 @@ export default function Home() {
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a className="button-primary" href="#contact">
-                  Book a Trial Lesson
+                  Request Lesson Information
                 </a>
                 <a className="button-secondary" href="#about">
                   Learn More
@@ -117,13 +117,13 @@ export default function Home() {
                 sizes="(min-width: 1024px) 42vw, 90vw"
                 className="object-cover"
               />
-              <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-ivory/40 bg-ivory/86 p-5 shadow-card backdrop-blur">
-                <p className="font-heading text-2xl text-walnut">
-                  Cozy instruction, clear foundations.
+              <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-ivory/70 bg-ivory/95 p-5 shadow-card sm:inset-x-5 sm:bottom-5 sm:p-6">
+                <p className="font-heading text-2xl leading-tight text-walnut sm:text-3xl">
+                  Encouraging Lessons for Growing Musicians
                 </p>
-                <p className="mt-1 text-sm leading-6 text-walnut/70">
-                  A warm home-studio feel for families in Irving and nearby DFW
-                  communities.
+                <p className="mt-2 text-sm font-medium leading-6 text-walnut/78 sm:text-base">
+                  Helping children develop confidence and a lifelong love of
+                  music.
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Lessons"
-              title="A thoughtful start for young musicians"
+              title="Private Piano Lessons Designed for Children"
               centered
             />
             <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -359,7 +359,7 @@ export default function Home() {
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-ivory px-6 text-sm font-semibold text-walnut shadow-card transition hover:-translate-y-0.5 hover:bg-cream focus:outline-none focus:ring-2 focus:ring-ivory focus:ring-offset-2 focus:ring-offset-sage"
                   href={`mailto:${contactEmail}`}
                 >
-                  Book a Trial Lesson
+                  Request Lesson Information
                 </a>
               </div>
             </div>
@@ -385,18 +385,6 @@ export default function Home() {
                   Irving, Las Colinas, Valley Ranch, Coppell, and surrounding DFW
                   communities.
                 </p>
-              </div>
-              <div className="mt-6 flex gap-3">
-                {["Instagram", "Facebook"].map((label) => (
-                  <a
-                    className="rounded-full border border-ivory/20 px-4 py-2 text-sm font-semibold text-ivory/86 transition hover:bg-ivory hover:text-walnut"
-                    href="#contact"
-                    key={label}
-                    aria-label={`${label} coming soon`}
-                  >
-                    {label}
-                  </a>
-                ))}
               </div>
             </address>
           </div>

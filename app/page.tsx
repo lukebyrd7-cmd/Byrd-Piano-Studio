@@ -53,6 +53,10 @@ const faqs = [
   },
 ];
 
+const contactEmail = "emiliebyrd1@gmail.com";
+const contactPhone = "9407359052";
+const formattedPhone = "(940) 735-9052";
+
 export default function Home() {
   return (
     <>
@@ -105,14 +109,15 @@ export default function Home() {
 
         <section id="about" className="bg-ivory py-20 sm:py-24">
           <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.85fr_1fr]">
-            <div className="rounded-[1.75rem] border border-beige bg-cream p-5 shadow-card">
-              <div className="flex aspect-[4/5] items-center justify-center rounded-[1.35rem] border border-dashed border-sage/45 bg-[linear-gradient(135deg,#fffdf8,#e8dfd3)] p-8 text-center">
-                <div>
-                  <p className="font-heading text-4xl text-walnut">Mrs. Byrd</p>
-                  <p className="mt-3 text-sm uppercase tracking-[0.24em] text-sage">
-                    Portrait coming soon
-                  </p>
-                </div>
+            <div className="rounded-[1.75rem] border border-beige bg-cream p-4 shadow-card sm:p-5">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.35rem]">
+                <Image
+                  src="/images/emilie-byrd-profile.png"
+                  alt="Emilie Byrd smiling outdoors"
+                  fill
+                  sizes="(min-width: 1024px) 38vw, 90vw"
+                  className="object-cover"
+                />
               </div>
             </div>
             <div>
@@ -235,7 +240,7 @@ export default function Home() {
               <div className="mt-8">
                 <a
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-ivory px-6 text-sm font-semibold text-walnut shadow-card transition hover:-translate-y-0.5 hover:bg-cream focus:outline-none focus:ring-2 focus:ring-ivory focus:ring-offset-2 focus:ring-offset-sage"
-                  href="mailto:hello@byrdpianostudio.com"
+                  href={`mailto:${contactEmail}`}
                 >
                   Book a Trial Lesson
                 </a>
@@ -245,9 +250,15 @@ export default function Home() {
               <p className="font-heading text-2xl">Byrd Piano Studio</p>
               <a
                 className="mt-4 block text-ivory/88 underline decoration-ivory/30 underline-offset-4 hover:text-white"
-                href="mailto:hello@byrdpianostudio.com"
+                href={`mailto:${contactEmail}`}
               >
-                hello@byrdpianostudio.com
+                {contactEmail}
+              </a>
+              <a
+                className="mt-3 block text-ivory/88 underline decoration-ivory/30 underline-offset-4 hover:text-white"
+                href={`tel:${contactPhone}`}
+              >
+                {formattedPhone}
               </a>
               <div className="mt-6">
                 <p className="text-sm font-bold uppercase tracking-[0.22em] text-ivory/62">

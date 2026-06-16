@@ -95,8 +95,8 @@ export default function Home() {
                 Private Piano Lessons in Irving, Texas
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-walnut/78">
-                Helping children develop confidence, discipline, and a lifelong
-                love of music through warm, personalized instruction.
+                Helping children develop a lifelong love of music through warm,
+                personalized instruction.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a className="button-primary" href="#contact">
@@ -117,15 +117,6 @@ export default function Home() {
                 sizes="(min-width: 1024px) 42vw, 90vw"
                 className="object-cover"
               />
-              <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-ivory/70 bg-ivory/95 p-5 shadow-card sm:inset-x-5 sm:bottom-5 sm:p-6">
-                <p className="font-heading text-2xl leading-tight text-walnut sm:text-3xl">
-                  Encouraging Lessons for Growing Musicians
-                </p>
-                <p className="mt-2 text-sm font-medium leading-6 text-walnut/78 sm:text-base">
-                  Helping children develop confidence and a lifelong love of
-                  music.
-                </p>
-              </div>
             </div>
           </div>
         </section>

@@ -1,6 +1,7 @@
 const navigation = [
   { label: "About", href: "#about" },
   { label: "Lessons", href: "#lessons" },
+  { label: "Tuition", href: "#tuition" },
   { label: "Philosophy", href: "#philosophy" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },

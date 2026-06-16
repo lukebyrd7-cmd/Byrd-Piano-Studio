@@ -19,6 +19,29 @@ const lessons = [
   },
 ];
 
+const lessonOptions = [
+  {
+    title: "30-Minute Lessons",
+    description: "Ideal for beginners and younger students.",
+    tuition: "$50",
+  },
+  {
+    title: "45-Minute Lessons",
+    description:
+      "Recommended for students who benefit from additional time for repertoire, technique, and skill development.",
+    tuition: "$75",
+  },
+];
+
+const includedItems = [
+  "Personalized one-on-one instruction",
+  "Technique and foundational piano skills",
+  "Music reading and rhythm training",
+  "Ear training",
+  "Repertoire selected for the student’s level and interests",
+  "Practice guidance for home success",
+];
+
 const familyReasons = [
   "Patient, encouraging instruction",
   "Elementary education background",
@@ -40,7 +63,7 @@ const faqs = [
   },
   {
     question: "How long are lessons?",
-    answer: "30-, 45-, and 60-minute lesson options are available.",
+    answer: "30- and 45-minute lesson options are available.",
   },
   {
     question: "Do you offer trial lessons?",
@@ -163,6 +186,100 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="tuition" className="bg-ivory py-20 sm:py-24">
+          <div className="section-shell">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-sage">
+                Tuition & Lessons
+              </p>
+              <h2 className="font-heading text-4xl leading-tight text-walnut sm:text-5xl">
+                Simple, Transparent Pricing
+              </h2>
+              <div className="mt-6 space-y-4 text-lg leading-8 text-walnut/76">
+                <p>
+                  At Byrd Piano Studio, tuition is kept straightforward so
+                  families can focus on what matters most—steady progress,
+                  confidence, and enjoying music.
+                </p>
+                <p>
+                  All lessons are private, one-on-one instruction tailored to
+                  each student’s age, learning style, and experience level.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 grid gap-5 md:grid-cols-2">
+              {lessonOptions.map((option) => (
+                <article
+                  className="rounded-3xl border border-beige bg-cream p-7 shadow-card sm:p-8"
+                  key={option.title}
+                >
+                  <h3 className="font-heading text-3xl text-walnut">
+                    {option.title}
+                  </h3>
+                  <p className="mt-4 min-h-16 leading-7 text-walnut/72">
+                    {option.description}
+                  </p>
+                  <div className="mt-8 flex items-end gap-2 border-t border-walnut/10 pt-6">
+                    <p className="font-heading text-5xl leading-none text-sage">
+                      {option.tuition}
+                    </p>
+                    <p className="pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-walnut/55">
+                      per lesson
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-7 text-walnut/72">
+              Most students attend one lesson per week to build consistent
+              skills and steady progress over time.
+            </p>
+
+            <div className="mt-14 grid gap-5 lg:grid-cols-[0.92fr_1fr]">
+              <section className="rounded-3xl border border-beige bg-cream p-7 shadow-card sm:p-8">
+                <h3 className="font-heading text-3xl text-walnut">
+                  What’s Included
+                </h3>
+                <ul className="mt-7 grid gap-4 sm:grid-cols-2">
+                  {includedItems.map((item) => (
+                    <li
+                      className="flex gap-3 text-sm font-semibold leading-6 text-walnut/78"
+                      key={item}
+                    >
+                      <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage/12 text-xs font-bold text-sage">
+                        ✓
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section className="rounded-3xl border border-beige bg-cream p-7 shadow-card sm:p-8">
+                <h3 className="font-heading text-3xl text-walnut">
+                  Trial Lessons
+                </h3>
+                <p className="mt-5 leading-7 text-walnut/74">
+                  Trial lessons are available upon request and are a great
+                  opportunity to meet, discuss goals, and determine whether Byrd
+                  Piano Studio is a good fit for your child.
+                </p>
+                <div className="mt-7">
+                  <a className="button-primary" href="#contact">
+                    Schedule a Trial Lesson
+                  </a>
+                </div>
+              </section>
+            </div>
+
+            <p className="mx-auto mt-10 max-w-2xl rounded-full border border-sage/20 bg-sage/10 px-5 py-3 text-center text-sm font-semibold text-sage">
+              Limited openings are currently available for new students.
+            </p>
           </div>
         </section>
 

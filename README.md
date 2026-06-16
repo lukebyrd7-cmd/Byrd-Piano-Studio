@@ -1,1 +1,1 @@
-# Byrd Piano Studio
+# Byrd Music Academy

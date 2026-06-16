@@ -13,9 +13,9 @@ export function Header() {
         <a
           href="#"
           className="font-heading text-xl font-semibold text-walnut sm:text-2xl"
-          aria-label="Byrd Piano Studio home"
+          aria-label="Byrd Music Academy home"
         >
-          Byrd Piano Studio
+          Byrd Music Academy
         </a>
         <a
           className="button-primary min-h-10 whitespace-nowrap px-3 text-xs sm:min-h-12 sm:px-6 sm:text-sm lg:order-3"

@@ -72,7 +72,7 @@ const faqs = [
   {
     question: "Are lessons taught from a Christian perspective?",
     answer:
-      "Byrd Piano Studio is operated by a Christian family and seeks to provide a warm, encouraging, and family-friendly environment. Students from all backgrounds are welcome.",
+      "Byrd Music Academy is operated by a Christian family and seeks to provide a warm, encouraging, and family-friendly environment. Students from all backgrounds are welcome.",
   },
 ];
 
@@ -200,7 +200,7 @@ export default function Home() {
               </h2>
               <div className="mt-6 space-y-4 text-lg leading-8 text-walnut/76">
                 <p>
-                  At Byrd Piano Studio, tuition is kept straightforward so
+                  At Byrd Music Academy, tuition is kept straightforward so
                   families can focus on what matters most—steady progress,
                   confidence, and enjoying music.
                 </p>
@@ -267,7 +267,7 @@ export default function Home() {
                 <p className="mt-5 leading-7 text-walnut/74">
                   Trial lessons are available upon request and are a great
                   opportunity to meet, discuss goals, and determine whether Byrd
-                  Piano Studio is a good fit for your child.
+                  Music Academy is a good fit for your child.
                 </p>
                 <div className="mt-7">
                   <a className="button-primary" href="#contact">
@@ -286,7 +286,7 @@ export default function Home() {
         <section className="bg-walnut py-20 text-ivory sm:py-24">
           <div className="section-shell grid gap-12 lg:grid-cols-[0.85fr_1fr] lg:items-start">
             <SectionHeading
-              eyebrow="Why families choose Byrd Piano Studio"
+              eyebrow="Why families choose Byrd Music Academy"
               title="Warm teaching with lasting musical foundations"
               dark
             />
@@ -316,7 +316,7 @@ export default function Home() {
                 title="More Than Just Notes"
               />
               <p className="mt-7 text-lg leading-8 text-walnut/76">
-                At Byrd Piano Studio, lessons are about more than learning songs.
+                At Byrd Music Academy, lessons are about more than learning songs.
                 Music teaches discipline, creativity, perseverance, and an
                 appreciation for beauty. Mrs. Byrd seeks to cultivate these
                 qualities while helping students enjoy the gift of music in a
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
             </div>
             <address className="not-italic rounded-3xl border border-ivory/16 bg-ivory/10 p-7 shadow-card">
-              <p className="font-heading text-2xl">Byrd Piano Studio</p>
+              <p className="font-heading text-2xl">Byrd Music Academy</p>
               <a
                 className="mt-4 block text-ivory/88 underline decoration-ivory/30 underline-offset-4 hover:text-white"
                 href={`mailto:${contactEmail}`}

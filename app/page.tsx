@@ -39,7 +39,6 @@ const includedItems = [
   "Personalized one-on-one instruction",
   "Technique and foundational piano skills",
   "Music reading and rhythm training",
-  "Ear training",
   "Repertoire selected for the student’s level and interests",
   "Practice guidance for home success",
 ];
@@ -54,9 +53,8 @@ const familyReasons = [
 
 const credentials = [
   "Texas Certified Teacher (Early Childhood–6th Grade)",
-  "Education degree",
+  "Education degree with a music minor",
   "Elementary classroom teaching experience",
-  "Music minor",
   "20 years of piano experience",
 ];
 
@@ -178,10 +176,10 @@ export default function Home() {
                   music are encouraged.
                 </p>
               </div>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              <div className="mx-auto mt-8 grid max-w-2xl justify-center gap-3 sm:grid-cols-2">
                 {credentials.map((credential) => (
                   <div
-                    className="rounded-2xl border border-beige bg-cream px-4 py-3 text-sm font-semibold leading-6 text-walnut/78 shadow-sm"
+                    className="w-full rounded-2xl border border-beige bg-cream px-4 py-3 text-center text-sm font-semibold leading-6 text-walnut/78 shadow-sm"
                     key={credential}
                   >
                     {credential}

@@ -176,16 +176,19 @@ export default function Home() {
                   music are encouraged.
                 </p>
               </div>
-              <div className="mx-auto mt-8 grid max-w-2xl justify-center gap-3 sm:grid-cols-2">
+              <ul className="mt-8 space-y-3 border-l border-sage/20 pl-5">
                 {credentials.map((credential) => (
-                  <div
-                    className="w-full rounded-2xl border border-beige bg-cream px-4 py-3 text-center text-sm font-semibold leading-6 text-walnut/78 shadow-sm"
+                  <li
+                    className="flex gap-3 text-sm font-semibold leading-6 text-walnut/78"
                     key={credential}
                   >
-                    {credential}
-                  </div>
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage/12 text-xs font-bold text-sage">
+                      ✓
+                    </span>
+                    <span>{credential}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         </section>

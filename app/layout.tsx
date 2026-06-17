@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Byrd Music Academy | Piano Lessons in Irving, TX",
+  title: "Piano Lessons with Emilie Byrd | Byrd Music Academy",
   description:
-    "Warm, personalized piano lessons for children and beginners in Irving, Texas. Encouraging instruction in a family-friendly environment.",
+    "Warm, encouraging piano lessons for children and beginners with Emilie Byrd, a Texas Certified Teacher serving Irving, Las Colinas, Coppell, and DFW families.",
   metadataBase: new URL("https://byrdmusicacademy.com"),
   openGraph: {
-    title: "Byrd Music Academy | Piano Lessons in Irving, TX",
+    title: "Piano Lessons with Emilie Byrd | Byrd Music Academy",
     description:
-      "Warm, personalized piano lessons for children and beginners in Irving, Texas. Encouraging instruction in a family-friendly environment.",
+      "Warm, encouraging piano lessons for children and beginners with Emilie Byrd, a Texas Certified Teacher serving Irving, Las Colinas, Coppell, and DFW families.",
     url: "https://byrdmusicacademy.com",
     siteName: "Byrd Music Academy",
     locale: "en_US",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Byrd Music Academy | Piano Lessons in Irving, TX",
+    title: "Piano Lessons with Emilie Byrd | Byrd Music Academy",
     description:
-      "Warm, personalized piano lessons for children and beginners in Irving, Texas.",
+      "Warm, encouraging piano lessons for children and beginners with Emilie Byrd.",
     images: [
       "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=1200&q=80",
     ],

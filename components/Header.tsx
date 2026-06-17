@@ -21,7 +21,7 @@ export function Header() {
           className="button-primary min-h-10 whitespace-nowrap px-3 text-xs sm:min-h-12 sm:px-6 sm:text-sm lg:order-3"
           href="#contact"
         >
-          Request Lesson Information
+          Request Information
         </a>
         <nav
           className="order-3 flex w-full items-center gap-4 overflow-x-auto border-t border-walnut/10 pt-3 sm:gap-5 lg:order-2 lg:w-auto lg:gap-7 lg:overflow-visible lg:border-t-0 lg:pt-0"

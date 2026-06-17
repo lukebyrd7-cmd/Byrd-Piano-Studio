@@ -7,17 +7,19 @@ import { SectionHeading } from "@/components/SectionHeading";
 const lessons = [
   {
     title: "Beginner Piano",
-    body: "A welcoming introduction for children beginning their musical journey.",
+    body: "A warm, age-appropriate start for children and beginning students.",
   },
   {
-    title: "Individual Instruction",
-    body: "Each student progresses at their own pace with personalized lessons and clear weekly goals.",
+    title: "Weekly Instruction",
+    body: "Consistent weekly lessons help students build confidence, practice well, and make steady progress.",
   },
   {
     title: "Musical Foundations",
     body: "Students develop technique, rhythm, note reading, and good practice habits that provide a strong foundation for future growth.",
   },
 ];
+
+const audienceItems = ["Children", "Beginners", "Families"];
 
 const lessonOptions = [
   {
@@ -43,13 +45,19 @@ const includedItems = [
 ];
 
 const familyReasons = [
-  "Patient, encouraging instruction",
-  "Elementary education background",
-  "Individualized lessons",
-  "Strong musical foundations",
-  "Christian values and family-friendly environment",
-  "Over twenty years of piano experience",
-  "Convenient Irving location",
+  "Taught by a Texas Certified Teacher (Early Childhood–6th Grade)",
+  "Patient and encouraging instruction for children and beginners",
+  "Weekly lessons that encourage steady progress",
+  "A warm, family-friendly environment",
+  "Foundations for a lifelong enjoyment of music",
+];
+
+const credentials = [
+  "Texas Certified Teacher (Early Childhood–6th Grade)",
+  "Education degree",
+  "Elementary classroom teaching experience",
+  "Music minor",
+  "20 years of piano experience",
 ];
 
 const faqs = [
@@ -89,23 +97,42 @@ export default function Home() {
           <div className="section-shell grid items-center gap-12 pb-20 lg:grid-cols-[1fr_0.88fr] lg:pb-24">
             <div className="max-w-3xl">
               <p className="mb-5 inline-flex rounded-full border border-sage/25 bg-ivory/80 px-4 py-2 text-sm font-semibold text-sage shadow-sm">
-                Private lessons for young beginners
+                Designed especially for children and beginning students
               </p>
               <h1 className="font-heading text-5xl leading-[1.05] text-walnut sm:text-6xl lg:text-7xl">
-                Private Piano Lessons in Irving, Texas
+                Piano Lessons with Emilie Byrd
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-walnut/78">
-                Helping children develop a lifelong love of music through warm,
-                personalized instruction.
+                Warm, encouraging piano lessons for children and beginners,
+                taught by a Texas Certified Teacher (Early Childhood–6th Grade).
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-walnut/70">
+                At Byrd Music Academy, Emilie helps students build confidence,
+                develop strong musical foundations, and discover the joy of
+                making music.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a className="button-primary" href="#contact">
-                  Request Lesson Information
+                  Request Information
                 </a>
                 <a className="button-secondary" href="#about">
-                  Learn More
+                  Meet Emilie
                 </a>
               </div>
+              <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
+                {audienceItems.map((item) => (
+                  <div
+                    className="rounded-2xl border border-beige bg-ivory/82 px-4 py-3 text-sm font-semibold text-walnut/78 shadow-sm"
+                    key={item}
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 max-w-2xl text-sm font-semibold leading-6 text-sage">
+                Serving families throughout Irving, Las Colinas, Coppell, and
+                the Dallas-Fort Worth area.
+              </p>
             </div>
 
             <div className="relative min-h-[24rem] overflow-hidden rounded-[2rem] bg-beige shadow-soft sm:min-h-[32rem]">
@@ -135,20 +162,31 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="About" title="Meet Mrs. Byrd" />
+              <SectionHeading eyebrow="About" title="Meet Emilie Byrd" />
               <div className="mt-7 space-y-5 text-lg leading-8 text-walnut/76">
                 <p>
-                  Mrs. Byrd has been playing piano for over twenty years and has
-                  taught piano students for more than two years. She holds a
-                  degree in Elementary Education with a minor in Music and
-                  previously taught in the classroom before turning her attention
-                  to helping students discover the joy of music.
+                  Emilie combines her background in elementary education with
+                  years of piano study to create lessons that are engaging,
+                  encouraging, and age-appropriate. Her goal is to help children
+                  develop confidence and enjoy making music.
                 </p>
                 <p>
-                  She believes music is a gift from God to be cultivated and
-                  enjoyed. Her lessons combine patience, encouragement, and
-                  strong fundamentals in a warm, family-friendly environment.
+                  As a Texas Certified Teacher (Early Childhood–6th Grade),
+                  Emilie brings patience, classroom experience, and a thoughtful
+                  understanding of how children learn. Families can expect a
+                  warm environment where steady growth, creativity, and joy in
+                  music are encouraged.
                 </p>
+              </div>
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {credentials.map((credential) => (
+                  <div
+                    className="rounded-2xl border border-beige bg-cream px-4 py-3 text-sm font-semibold leading-6 text-walnut/78 shadow-sm"
+                    key={credential}
+                  >
+                    {credential}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -158,9 +196,13 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Lessons"
-              title="Private Piano Lessons Designed for Children"
+              title="Private Piano Lessons for Children and Beginners"
               centered
             />
+            <p className="mx-auto mt-6 max-w-3xl text-center text-lg leading-8 text-walnut/74">
+              Designed especially for children and beginning students, lessons
+              give families a clear and encouraging path into music.
+            </p>
             <div className="mt-12 grid gap-5 md:grid-cols-3">
               {lessons.map((lesson, index) => (
                 <article
@@ -192,7 +234,7 @@ export default function Home() {
               <div className="mt-6 space-y-4 text-lg leading-8 text-walnut/76">
                 <p>
                   At Byrd Music Academy, tuition is kept straightforward so
-                  families can focus on what matters most—steady progress,
+                  families can focus on what matters most: steady progress,
                   confidence, and enjoying music.
                 </p>
                 <p>
@@ -227,8 +269,8 @@ export default function Home() {
             </div>
 
             <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-7 text-walnut/72">
-              Most students attend one lesson per week to build consistent
-              skills and steady progress over time.
+              Students attend weekly lessons to encourage consistency,
+              confidence, and meaningful musical growth.
             </p>
 
             <div className="mt-14 grid gap-5 lg:grid-cols-[0.92fr_1fr]">
@@ -262,7 +304,7 @@ export default function Home() {
                 </p>
                 <div className="mt-7">
                   <a className="button-primary" href="#contact">
-                    Schedule a Trial Lesson
+                    Request Information
                   </a>
                 </div>
               </section>
@@ -277,8 +319,8 @@ export default function Home() {
         <section className="bg-walnut py-20 text-ivory sm:py-24">
           <div className="section-shell grid gap-12 lg:grid-cols-[0.85fr_1fr] lg:items-start">
             <SectionHeading
-              eyebrow="Why families choose Byrd Music Academy"
-              title="Warm teaching with lasting musical foundations"
+              eyebrow="Trust & Fit"
+              title="Why Families Choose Byrd Music Academy"
               dark
             />
             <div className="grid gap-4 sm:grid-cols-2">
@@ -309,7 +351,7 @@ export default function Home() {
               <p className="mt-7 text-lg leading-8 text-walnut/76">
                 At Byrd Music Academy, lessons are about more than learning songs.
                 Music teaches discipline, creativity, perseverance, and an
-                appreciation for beauty. Mrs. Byrd seeks to cultivate these
+                appreciation for beauty. Emilie seeks to cultivate these
                 qualities while helping students enjoy the gift of music in a
                 warm and encouraging atmosphere.
               </p>
@@ -350,7 +392,7 @@ export default function Home() {
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-ivory px-6 text-sm font-semibold text-walnut shadow-card transition hover:-translate-y-0.5 hover:bg-cream focus:outline-none focus:ring-2 focus:ring-ivory focus:ring-offset-2 focus:ring-offset-sage"
                   href={`mailto:${contactEmail}`}
                 >
-                  Request Lesson Information
+                  Request Information
                 </a>
               </div>
             </div>

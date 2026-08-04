@@ -151,8 +151,8 @@ export default function Home() {
             <div className="rounded-[1.75rem] border border-beige bg-cream p-4 shadow-card sm:p-5">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.35rem]">
                 <Image
-                  src="/images/emilie-byrd-profile.png"
-                  alt="Emilie Byrd smiling outdoors"
+                  src="/images/emilie-byrd-portrait.jpeg"
+                  alt="Emilie Byrd, piano instructor at Byrd Music Academy"
                   fill
                   sizes="(min-width: 1024px) 38vw, 90vw"
                   className="object-cover"

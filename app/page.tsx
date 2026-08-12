@@ -19,19 +19,17 @@ const lessons = [
   },
 ];
 
-const audienceItems = ["Children", "Beginners", "Families"];
-
 const lessonOptions = [
   {
     title: "30-Minute Lessons",
     description: "Ideal for beginners and younger students.",
-    tuition: "$50",
+    tuition: "$45",
   },
   {
     title: "45-Minute Lessons",
     description:
       "Recommended for students who benefit from additional time for repertoire, technique, and skill development.",
-    tuition: "$75",
+    tuition: "$60",
   },
 ];
 
@@ -61,7 +59,7 @@ const credentials = [
 const faqs = [
   {
     question: "What ages do you teach?",
-    answer: "Beginning students ages 5 and up.",
+    answer: "Beginning students ages 6 and up.",
   },
   {
     question: "Do students need a piano?",
@@ -116,16 +114,6 @@ export default function Home() {
                 <a className="button-secondary" href="#about">
                   Meet Emilie
                 </a>
-              </div>
-              <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
-                {audienceItems.map((item) => (
-                  <div
-                    className="rounded-2xl border border-beige bg-ivory/82 px-4 py-3 text-sm font-semibold text-walnut/78 shadow-sm"
-                    key={item}
-                  >
-                    {item}
-                  </div>
-                ))}
               </div>
               <p className="mt-5 max-w-2xl text-sm font-semibold leading-6 text-sage">
                 Serving families throughout Irving, Las Colinas, Coppell, and
@@ -269,7 +257,11 @@ export default function Home() {
               ))}
             </div>
 
-            <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-7 text-walnut/72">
+            <p className="mx-auto mt-6 max-w-3xl text-center text-sm font-semibold leading-6 text-sage">
+              Sibling discounts available.
+            </p>
+
+            <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-7 text-walnut/72">
               Students attend weekly lessons to encourage consistency,
               confidence, and meaningful musical growth.
             </p>
